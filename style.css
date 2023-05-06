@@ -37,8 +37,6 @@ nav {
 #navigation {
     display: flex;
     gap: 40px;
-
-
 }
 
 #navigation-li {
@@ -140,6 +138,7 @@ nav {
 /* Using media queries for banner*/
 @media (max-width: 640px) {
     .banner-container {
+      display: block;  
       text-align: center;
     }
 
@@ -164,6 +163,16 @@ nav {
     margin-right: 40px;
     margin-left: 40px;
 }
+
+/* Using media queries for logo section*/
+@media (max-width: 640px) {
+    .logo-section {
+      display: block;  
+      text-align: center;
+    }
+
+   
+  }
 
 /* Popular section starts */
 #product-title {
