@@ -87,7 +87,7 @@ nav {
     }
 
     .search-cart{
-        flex-direction: column;
+       visibility: hidden;
     }
   }
 
@@ -99,7 +99,9 @@ nav {
 }
 
 .banner-container {
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .banner {
@@ -109,30 +111,39 @@ nav {
 }
 
 .banner-left {
+    width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
-    /* margin-left: 20px; */
+    
 }
 
 .banner-left p{
     display: block;
+    padding: 0 10px 0 10px;
     margin-top: 1em;
     margin-bottom: 1em;
-    margin-left: 0;
-    margin-right: 0;
+   
 }
 
 .banner-left h1{
-    
+    text-align: center;
 }
 
 .banner-right {
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     /* margin-right: 20px; */
+}
+
+.banner-button{
+   display: block;
+   padding: 0 10px 0 10px;
+   margin-top: 1em;
+   margin-bottom: 1em;
 }
 
 /* Using media queries for banner*/
@@ -167,8 +178,10 @@ nav {
 /* Using media queries for logo section*/
 @media (max-width: 640px) {
     .logo-section {
-      display: block;  
-      text-align: center;
+      display: flex;
+      flex-direction: column;  
+      justify-content: center;
+      align-items: center;
     }
 
    
@@ -188,11 +201,12 @@ nav {
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     align-items: center;
+    margin-left: 40px;
 }
 
 .card {
     width: 300px;
-    padding-top: 30px;
+   
     box-shadow: 2px 0 2px 2px rgb(199, 76, 117);
     padding-left: 10px;
     padding-right: 10px;
@@ -200,7 +214,7 @@ nav {
 }
 
 .img {
-    height: 256px;
+    height: 300px;
     width: 300px;
 }
 
@@ -224,11 +238,6 @@ nav {
     color: indianred;
 }
 
-.see-more {
-    /* padding-bottom: 30px;
-    margin-bottom: 50px;
-    margin-top: -70px; */
-}
 
 /* Contact us form */
 .contact {
